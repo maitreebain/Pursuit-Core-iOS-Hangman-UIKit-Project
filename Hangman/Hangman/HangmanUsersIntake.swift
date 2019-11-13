@@ -18,9 +18,13 @@ class readLineIntake {
     var guessingNum = 0
     
     func userIntake(userAnswerStatus: Character) -> AnswerStatus {
-
-
+        
         return AnswerStatus.correct // correct / incorrect
+    }
+    
+    func getCorrectAns() -> Character {
+        
+        return Character
     }
     
 }

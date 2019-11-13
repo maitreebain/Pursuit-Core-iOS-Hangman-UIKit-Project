@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     var aKey = "abcdefghijklmnopqrstuvwxyz" {
         didSet {
             for char in aKey {
-                if char == hangmanAns.userIntake(userAnswerStatus: Character) {
+                if char == hangmanAns.getCorrectAns() {
 
                 }
             }
