@@ -17,10 +17,10 @@ class readLineIntake {
     
     var guessingNum = 0
     
-//    func userIntake(userAnswerStatus: Character) -> AnswerStatus {
-//
-//
-//        return AnswerStatus // correct / incorrect
-//    }
+    func userIntake(userAnswerStatus: Character) -> AnswerStatus {
+
+
+        return AnswerStatus.correct // correct / incorrect
+    }
     
 }

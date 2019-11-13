@@ -16,12 +16,32 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var playerTwoTextField: UITextField!
     
-    var alphabet: [String] = ["abcdefghijklmnopqrstuvwxyz"]
+    var hangmanAns = readLineIntake()
+    
+    
+    
+    var aKey = "abcdefghijklmnopqrstuvwxyz" {
+        didSet {
+            for char in aKey {
+                if char == hangmanAns.userIntake(userAnswerStatus: Character) {
+
+                }
+            }
+        }
+    }
+    
+//    var randomWord: [Character] = Array(alphabet.randomElement() ?? "Input a valid response.")
+//    var secretWord: [Character] = Array(repeating: "_" , count: randomWord.count)
+    
+    
+    
+    
     
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
+//    view.backgroundColor = .black
     playerOneTextField.delegate = self
     playerTwoTextField.delegate = self
   }
