@@ -31,11 +31,12 @@ class ViewController: UIViewController {
     }
     
 //    var randomWord: [Character] = Array(alphabet.randomElement() ?? "Input a valid response.")
+    //useranswer - a character 
 //    var secretWord: [Character] = Array(repeating: "_" , count: randomWord.count)
     
-    
-    
-    
+    /* IMPORTANT ~!!!!!*/
+    //                    if !(newWord.contains(value)) {
+//}
     
   override func viewDidLoad() {
     super.viewDidLoad()

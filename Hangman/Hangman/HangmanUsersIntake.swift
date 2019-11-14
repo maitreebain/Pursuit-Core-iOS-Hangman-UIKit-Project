@@ -15,16 +15,24 @@ enum AnswerStatus {
 
 class readLineIntake {
     
-    var guessingNum = 0
+    var guessingNum: Int
+    
+    init() {
+        guessingNum = 0
+        
+    }
     
     func userIntake(userAnswerStatus: Character) -> AnswerStatus {
         
         return AnswerStatus.correct // correct / incorrect
     }
     
-    func getCorrectAns() -> Character {
+    func getCorrectAns() -> AnswerStatus {
         
-        return Character
+        
+        
+        
+        return .incorrect
     }
     
 }
