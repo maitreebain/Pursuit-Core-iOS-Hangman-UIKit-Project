@@ -28,36 +28,19 @@ class readLineIntake {
     }
     
     
-    func charCompare(playerOneAnswer: , ) {
-//                var playerTwoAnswer = ""
-//var oneLetter = Set<Int>()
-//
-//
-//for (index, char) in playerOneWord.enumerated() {
-//    if char == playerTwoGuess {
-//        oneLetter.insert(index)
-//        if oneLetter.contains(index){
-//            playe
-//        }
-//    }
+    func charCompare(playerOneAnswer: String, playerTwoGuess: String) -> String {
+        var counter = 0
         
-        //                for (index, char) in randomWord.enumerated(){
-        //    if userInput == char {
-        //        indices.insert(index)
-        //    }
-        //}
-        //
-        //for (index, _) in secretWord.enumerated(){
-        //    if indices.contains(index){
-        //        secretWord[index] = userInput
-        //    }
+        for char in playerOneAnswer{
+            if char == Character(playerTwoGuess) {
+                secretWord[counter] = String(char)
+            } else {
+                counter += 1
+            }
+        }
         
-        
+        return secretWord.joined(separator: " ")
     }
-    
-    
-    
-    
     
     
     

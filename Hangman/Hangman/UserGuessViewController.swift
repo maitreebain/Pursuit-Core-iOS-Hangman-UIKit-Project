@@ -27,9 +27,20 @@ class UserGuessViewController: UIViewController {
         print(guessWord.text)
     }
     
-
 }
 
-//extension UserGuessViewController: UITextFieldDelegate {
-//
-//}
+extension UserGuessViewController: UITextFieldDelegate {
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        textField.text = hangmanWord.charCompare(playerOneAnswer: hangmanWord.playerOneWord, playerTwoGuess: string)
+        
+        return true
+    }
+    
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        return true
+    }
+}
