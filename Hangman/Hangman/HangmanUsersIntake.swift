@@ -28,9 +28,42 @@ class readLineIntake {
     }
     
     
-    func getCorrectAns(PlayerOneWord: String, PlayerTwoGuess: String) -> AnswerStatus {
+    func charCompare(playerOneAnswer: , ) {
+//                var playerTwoAnswer = ""
+//var oneLetter = Set<Int>()
+//
+//
+//for (index, char) in playerOneWord.enumerated() {
+//    if char == playerTwoGuess {
+//        oneLetter.insert(index)
+//        if oneLetter.contains(index){
+//            playe
+//        }
+//    }
         
-        return PlayerOneWord == PlayerTwoGuess ? .correct : .incorrect
+        //                for (index, char) in randomWord.enumerated(){
+        //    if userInput == char {
+        //        indices.insert(index)
+        //    }
+        //}
+        //
+        //for (index, _) in secretWord.enumerated(){
+        //    if indices.contains(index){
+        //        secretWord[index] = userInput
+        //    }
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    func getCorrectAns(playerOneWord: String, playerTwoAnswer: String) -> AnswerStatus {
+        
+        return playerOneWord == playerTwoAnswer ? .correct : .incorrect
     }
     
 }
