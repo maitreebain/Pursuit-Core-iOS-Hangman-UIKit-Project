@@ -10,29 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var randomWordLabel: UILabel!
-    
-    @IBOutlet weak var playerOneTextField: UITextField!
-    
-    @IBOutlet weak var playerTwoTextField: UITextField!
     
     var hangmanAns = readLineIntake()
     
+//    var secretWord: [Character] = Array(repeating: "_" , count: readLineIntake.getCorrectAns(PlayerOneWord.count))
     
+    @IBOutlet weak var playerOneTextField: UITextField!
     
-    var aKey = "abcdefghijklmnopqrstuvwxyz" {
-        didSet {
-            for char in aKey {
-                if char == hangmanAns.getCorrectAns() {
-
-                }
-            }
-        }
-    }
-    
-//    var randomWord: [Character] = Array(alphabet.randomElement() ?? "Input a valid response.")
-    //useranswer - a character 
-//    var secretWord: [Character] = Array(repeating: "_" , count: randomWord.count)
+    var playerWordArray: [Character] = []
     
     /* IMPORTANT ~!!!!!*/
     //                    if !(newWord.contains(value)) {
@@ -42,9 +27,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
-//    view.backgroundColor = .black
     playerOneTextField.delegate = self
-    playerTwoTextField.delegate = self
   }
     
 
@@ -56,7 +39,28 @@ extension ViewController: UITextFieldDelegate {
         return true
     }
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        playerWordArray = Array(textField.text ?? "")
+        
+    }
 
     
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        return true
+    }
 }
+
+
+
+
+//    var aKey = "abcdefghijklmnopqrstuvwxyz" {
+//        didSet {
+//            for char in aKey {
+//                if char == hangmanAns.getCorrectAns() {
+//
+//                }
+//            }
+//        }
+//    }

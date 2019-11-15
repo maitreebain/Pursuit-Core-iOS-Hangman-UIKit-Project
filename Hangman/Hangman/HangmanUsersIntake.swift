@@ -22,17 +22,15 @@ class readLineIntake {
         
     }
     
-    func userIntake(userAnswerStatus: Character) -> AnswerStatus {
+    func userWord(PlayerWord: Character, PlayerGuess: Character) {
         
-        return AnswerStatus.correct // correct / incorrect
+        
     }
     
-    func getCorrectAns() -> AnswerStatus {
+    
+    func getCorrectAns(PlayerOneWord: String, PlayerTwoGuess: String) -> AnswerStatus {
         
-        
-        
-        
-        return .incorrect
+        return PlayerOneWord == PlayerTwoGuess ? .correct : .incorrect
     }
     
 }

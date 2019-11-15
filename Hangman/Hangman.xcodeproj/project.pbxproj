@@ -12,6 +12,7 @@
 		57FCB5F921A36D3D00163B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FCB5F721A36D3D00163B8E /* Main.storyboard */; };
 		57FCB5FB21A36D3E00163B8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57FCB5FA21A36D3E00163B8E /* Assets.xcassets */; };
 		57FCB5FE21A36D3E00163B8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FCB5FC21A36D3E00163B8E /* LaunchScreen.storyboard */; };
+		8043407A237F3ACB00782CE7 /* UserGuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80434079237F3ACB00782CE7 /* UserGuessViewController.swift */; };
 		8051BD20237C6FB600868BB1 /* HangmanUsersIntake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8051BD1F237C6FB500868BB1 /* HangmanUsersIntake.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		57FCB5FA21A36D3E00163B8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57FCB5FD21A36D3E00163B8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57FCB5FF21A36D3E00163B8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80434079237F3ACB00782CE7 /* UserGuessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGuessViewController.swift; sourceTree = "<group>"; };
 		8051BD1F237C6FB500868BB1 /* HangmanUsersIntake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangmanUsersIntake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +61,7 @@
 				57FCB5F321A36D3D00163B8E /* AppDelegate.swift */,
 				57FCB5F521A36D3D00163B8E /* ViewController.swift */,
 				57FCB5F721A36D3D00163B8E /* Main.storyboard */,
+				80434079237F3ACB00782CE7 /* UserGuessViewController.swift */,
 				8051BD1F237C6FB500868BB1 /* HangmanUsersIntake.swift */,
 				57FCB5FA21A36D3E00163B8E /* Assets.xcassets */,
 				57FCB5FC21A36D3E00163B8E /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8051BD20237C6FB600868BB1 /* HangmanUsersIntake.swift in Sources */,
+				8043407A237F3ACB00782CE7 /* UserGuessViewController.swift in Sources */,
 				57FCB5F621A36D3D00163B8E /* ViewController.swift in Sources */,
 				57FCB5F421A36D3D00163B8E /* AppDelegate.swift in Sources */,
 			);
