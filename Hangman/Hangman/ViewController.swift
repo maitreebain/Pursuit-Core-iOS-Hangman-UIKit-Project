@@ -11,13 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    var hangmanAns = readLineIntake()
-    
-//    var secretWord: [Character] = Array(repeating: "_" , count: readLineIntake.getCorrectAns(PlayerOneWord.count))
-    
     @IBOutlet weak var playerOneTextField: UITextField!
     
-    var playerWordArray: [Character] = []
+    var hangmanAns = readLineIntake()
+//
+//    var startGame = readLineIntake
     
     /* IMPORTANT ~!!!!!*/
     //                    if !(newWord.contains(value)) {
@@ -29,9 +27,19 @@ class ViewController: UIViewController {
     
     playerOneTextField.delegate = self
   }
-    
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("segue entered")
+        
+        guard let userIntakeController = segue.destination as? UserGuessViewController else {
+            return
+        }
+        print(hangmanAns.playerOneWord)
+        userIntakeController.hangmanWord = hangmanAns
+    }
 }
+
+
 
 extension ViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
@@ -39,15 +47,11 @@ extension ViewController: UITextFieldDelegate {
         return true
     }
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        
-        playerWordArray = Array(textField.text ?? "")
-        
-    }
 
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
+        hangmanAns.playerOneWord = textField.text ?? ""
         return true
     }
 }

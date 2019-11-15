@@ -15,16 +15,16 @@ enum AnswerStatus {
 
 class readLineIntake {
     
-    var guessingNum: Int
+    var guessingNum = 0
+    var secretWord = [String]()
+    var playerOneWord = ""
     
-    init() {
-        guessingNum = 0
-        
-    }
     
-    func userWord(PlayerWord: Character, PlayerGuess: Character) {
+    func userWord(playerWord: String) -> [String] {
+        let playerWord = playerOneWord
+        secretWord = [String](repeating: "_ " , count: playerWord.count)
         
-        
+        return secretWord
     }
     
     

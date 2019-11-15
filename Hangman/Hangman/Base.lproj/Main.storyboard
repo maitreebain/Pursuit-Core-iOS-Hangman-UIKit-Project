@@ -40,18 +40,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guess Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TE7-ev-lp4">
+                                <rect key="frame" x="160" y="438" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome to Hangman" id="fAM-22-ECa"/>
                     <connections>
-                        <outlet property="playerTwoTextField" destination="BHf-9T-xdG" id="2XY-wI-8lO"/>
+                        <outlet property="guessWord" destination="TE7-ev-lp4" id="fJu-L9-q3u"/>
+                        <outlet property="playerTwoTextField" destination="BHf-9T-xdG" id="N6j-On-3MB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749" y="116"/>
+            <point key="canvasLocation" x="1855" y="116"/>
         </scene>
         <!--Hangman-->
         <scene sceneID="4Dz-Nw-J7q">
@@ -100,7 +108,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Game"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="fsT-lw-JxE"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Hhr-tO-agA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -109,12 +117,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Hangman" id="teX-yC-S8N"/>
                     <connections>
-                        <outlet property="playerOneTextField" destination="v99-q4-ch6" id="0TY-ny-78o"/>
+                        <outlet property="playerOneTextField" destination="v99-q4-ch6" id="Br7-s8-9fV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULY-AG-jJY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1016" y="116"/>
+            <point key="canvasLocation" x="1015.9420289855074" y="115.84821428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jXB-gf-CjH">
@@ -127,7 +135,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="5OC-o0-V68" kind="relationship" relationship="rootViewController" id="rNJ-1N-eYK"/>
+                        <segue destination="5OC-o0-V68" kind="relationship" relationship="rootViewController" id="UY3-we-D2K"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3C-8b-SYO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
