@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
     
     playerOneTextField.delegate = self
   }
@@ -52,19 +51,10 @@ extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         hangmanAns.playerOneWord = textField.text ?? ""
+        
+        textField.resignFirstResponder()
         return true
     }
 }
 
 
-
-
-//    var aKey = "abcdefghijklmnopqrstuvwxyz" {
-//        didSet {
-//            for char in aKey {
-//                if char == hangmanAns.getCorrectAns() {
-//
-//                }
-//            }
-//        }
-//    }

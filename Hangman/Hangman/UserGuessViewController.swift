@@ -21,10 +21,10 @@ class UserGuessViewController: UIViewController {
         super.viewDidLoad()
 //
 
-//        playerTwoTextField.delegate = self
+        playerTwoTextField.delegate = self
 //
         guessWord.text = hangmanWord.userWord(playerWord: hangmanWord.playerOneWord).joined(separator: " ")
-        print(guessWord.text)
+        print(guessWord.text ?? "")
     }
     
 }
@@ -32,7 +32,7 @@ class UserGuessViewController: UIViewController {
 extension UserGuessViewController: UITextFieldDelegate {
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        textField.text = hangmanWord.charCompare(playerOneAnswer: hangmanWord.playerOneWord, playerTwoGuess: string)
+        guessWord.text = hangmanWord.charCompare(playerOneAnswer: hangmanWord.playerOneWord, playerTwoGuess: string)
         
         return true
     }
