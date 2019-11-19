@@ -34,6 +34,9 @@ class readLineIntake {
         for char in playerOneAnswer{
             if char == Character(playerTwoGuess) {
                 secretWord[counter] = String(char)
+            } else if !(playerOneAnswer.contains(playerTwoGuess)){
+                guessingNum += 1
+                print(guessingNum)
             } else {
                 counter += 1
             }
@@ -45,6 +48,7 @@ class readLineIntake {
     
     
     func getCorrectAns(playerOneWord: String, playerTwoAnswer: String) -> AnswerStatus {
+        
         
         return playerOneWord == playerTwoAnswer ? .correct : .incorrect
     }
