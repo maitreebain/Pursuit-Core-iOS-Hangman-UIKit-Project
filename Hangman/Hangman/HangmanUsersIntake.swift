@@ -8,11 +8,6 @@
 
 import Foundation
 
-enum AnswerStatus {
-    case correct
-    case incorrect
-}
-
 class readLineIntake {
     
     var guessingNum = 0
@@ -34,23 +29,17 @@ class readLineIntake {
         for char in playerOneAnswer{
             if char == Character(playerTwoGuess) {
                 secretWord[counter] = String(char)
-            } else if !(playerOneAnswer.contains(playerTwoGuess)){
-                guessingNum += 1
-                print(guessingNum)
             } else {
                 counter += 1
             }
+        }
+        if !(playerOneAnswer.contains(playerTwoGuess)){
+        guessingNum += 1
+        print(guessingNum)
         }
         
         return secretWord.joined(separator: " ")
     }
     
-    
-    
-    func getCorrectAns(playerOneWord: String, playerTwoAnswer: String) -> AnswerStatus {
-        
-        
-        return playerOneWord == playerTwoAnswer ? .correct : .incorrect
-    }
     
 }
